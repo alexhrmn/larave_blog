@@ -7,8 +7,8 @@
 
             <body>
                 <article>
-                    <h1><a href="/post"> My first Post</a></h1>
-                        <p>LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
+                    <h1><a href="/posts/my-first-post"> My first Post</a></h1>
+                        <p>1 LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
 
                             It was the right move.
 
@@ -19,8 +19,8 @@
                 </article>
 
                 <article>
-                    <h1><a href="/post"> My second Post</a></h1>
-                    <p>LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
+                    <h1><a href="/posts/my-second-post"> My second Post</a></h1>
+                    <p>2 LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
 
                         It was the right move.
 
@@ -32,9 +32,8 @@
                 </article>
 
                 <article>
-                    <h1><a href="/post"> My third Post</a></h1>
-                    <p>
-                        LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
+                    <h1><a href="/posts/my-third-post"> My third Post</a></h1>
+                    <p>3 LAS VEGAS (AP) — USA Basketball didn’t blow up Kevin Durant’s phone with repeated calls to beg and plead for him to play in the Tokyo Olympics. It was a much more dignified process: They asked, then they waited.
 
                         It was the right move.
 

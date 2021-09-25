@@ -18,35 +18,24 @@
     });
 
 
-    Route::get('post', function () {
-        return view('post', [
-           'post' => '<h1>Hello world</h1>'
-        ]);
-    });
+    Route::get('posts/{post}', function ($slug) {
 
-//    Route::get('/post', function (){
-//        return view ('post', [
-//           'post' => file_get_contents(__DIR__ . '/../resources/posts/my-first-post.html')
-//        ]);
-//    });
+        if (! file_exists($path = __DIR__ . "/../resources/posts/{$slug}.html")) {
+            return redirect('/');
+        }
 
-//
-//    Route::get('post/{post}', function ($slug) {
-//
-//        $path = __DIR__ . "/../resources/posts/$slug.html";
-//
-//        if(!file_exists($path)) {
-//            return redirect('/');
-//        }
-//
-//
-//        $post = file_get_contents($path);
-//
-//        return view('post', [
-//
-//            'post' => $post
-//        ]);
-//    });
+        $post = cache()->remember("posts.{$slug}", 1200 , function () use ($path){
+
+            var_dump('file_get_contents');
+
+            return file_get_contents($path);
+
+        });
+
+            return view('post', ['post' => $post]);
+
+
+    })->where('post', '[A-z_\-]+');
 
 
 
