@@ -17,11 +17,13 @@
 
     Route::get('/', function () {
 
-        $document = YamlFrontMatter::parseFile(
+       $document = YamlFrontMatter::parseFile(
            resource_path('posts/my-fourth-post.html')
-        );
+       );
 
         ddd($document);
+
+
 
 //        return view('posts', [
 //            'posts' => Post::all()
@@ -35,7 +37,6 @@
            'post' => Post::find($slug)
         ]);
     })->where('post', '[A-z_\-]+');
-
 
 
 
