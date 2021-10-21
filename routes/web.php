@@ -17,17 +17,25 @@
 
     Route::get('/', function () {
 
-       $document = YamlFrontMatter::parseFile(
-           resource_path('posts/my-fourth-post.html')
-       );
+            $document = YamlFrontMatter::parseFile(
 
-        ddd($document);
+                resource_path('posts/my-fourth-post.html'));
+
+                ddd($document);
 
 
 
-//        return view('posts', [
-//            'posts' => Post::all()
-//        ]);
+
+//        $files = File::files(resource_path("posts"));
+//        $documets = [];
+//
+//        foreach ($files as $file){
+//            $documets[] = YamlFrontMatter::parseFile($file);
+//        }
+//
+//        ddd($documets);
+
+
     });
 
 
