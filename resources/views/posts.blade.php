@@ -1,26 +1,17 @@
-<!doctype html>
+<x-layout>
+    @foreach ($posts as $post)
+        <article class="{{$loop->even ? 'foobar' : '' }}">
+            <h1>
+                <a href="/posts/{{$post->slug}}">
+                    {{$post->title}}
+                </a>
 
+            </h1>
 
-            <title>My blog</title>
+            <div>
+                {{$post->excerpt}}
+            </div>
+        </article>
 
-            <link rel="stylesheet" href="/app.css">
-
-            <body>
-
-               <?php foreach ($posts as $post) : ?>
-
-                <article>
-                    <h1>
-                        <a href="/posts/<?= $post ->slug ?>">
-                            <?= $post -> title; ?>
-                        </a>
-
-                    </h1>
-
-                    <div>
-                        <?= $post -> excerpt; ?>
-                    </div>
-                </article>
-
-               <?php endforeach; ?>
-            </body>
+    @endforeach
+</x-layout>
