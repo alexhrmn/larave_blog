@@ -53,7 +53,8 @@
        public static function find($slug)
 
        {
-           return static::all()->firstWhere('slug', $slug);
+           $post = static::all()->firstWhere('slug', $slug);
+
 
         }
         public static function findOrFail($slug)
